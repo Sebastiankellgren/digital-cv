@@ -1,0 +1,71 @@
+/* RESPONSIVE STYLING */
+
+/* Min-width: 741px */
+@media (min-width: 741px) {
+    .burger {
+        display: none !important;
+    }
+    
+    .menu-mobil-meny-container {
+        display: none !important;
+    }
+    
+    .top h1 {
+        display: none !important;
+    }
+}
+
+/* Max-width: 1084px */
+@media (max-width: 1084px) {
+    .interest-div {
+        width: 90%;
+    }
+}
+
+/* Max-width: 740px */
+@media (max-width: 740px) {
+    .burger {
+        display: inline-block;    
+    }
+    
+    .employment {
+        width: 60%;
+    }
+    
+    .employments {
+        width: 90%;
+    }
+    
+    .menu-meny-container {
+        display: none !important;
+    }
+}
+
+/* Max-width: 700px */
+@media (max-width: 700px) {
+    #contact form {
+        padding: 0 20px 50px;
+    }
+    
+    #contact input[type="text"] {
+        width: 100%;
+    }
+}
+
+/* Max-width: 550px */
+@media (max-width: 550px) {
+    #interests {
+        padding-bottom: 0;
+    }
+    
+    .interest-div {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .knowledge span {
+        display: block;
+        text-align: center;
+        margin: 50px 0 2px;
+    }
+}

@@ -8,6 +8,7 @@ $(document).ready(function(){
     smoothScrolling();
     scrollingEffects();
     meny();
+    interest();
     employment();
 });
 
@@ -86,6 +87,30 @@ function meny() {
 		$(".burger").addClass("change");
         $(".menu-mobil-meny-container").fadeIn("slow");
 	});
+}
+
+//Show information about the interest when it's clicked
+function interest() {
+    $(".interest-div").on("click", function() {
+        
+        if ( $(this).is(".active") ) {
+            $(this).find(".interest-info").css("opacity","0");
+            $(this).find("h3, .fa").css("opacity","1");
+            $(this).removeClass("active");
+            $(this).removeClass("darker");
+            return false;
+        }
+        
+        $(".interest-div").find(".interest-info").css("opacity","0");
+        $(".interest-div").find("h3, .fa").css("opacity","1");
+        $(".interest-div").removeClass("active");
+        $(".interest-div").removeClass("darker");
+        
+        $(this).find(".interest-info").css("opacity","1");
+        $(this).find("h3, .fa").css("opacity","0");
+        $(this).addClass("active");
+        $(this).addClass("darker");
+    });
 }
 
 //Show information about the employment when it's clicked

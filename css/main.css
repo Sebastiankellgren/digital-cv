@@ -87,11 +87,15 @@
 
 /* End of burger strucutre */
 
+body, html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
     overflow-y: scroll;
-    overflow-x: hidden;
     height: 100%;
 }
 
@@ -379,6 +383,10 @@ ul li {
     top: 0;
     left: 0;
     position: absolute;
+}
+
+.interest-div.darker:after {
+    opacity: 1;
 }
 
 .interest-div:hover:after, .interest-div:hover .interest-info {

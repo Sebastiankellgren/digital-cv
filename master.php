@@ -37,8 +37,6 @@
         
         <?php include 'blocks/employment.php' ?>
         
-        <?php include 'blocks/contact.php' ?>
-        
     </div>
 
     <?php include 'blocks/footer.php' ?>

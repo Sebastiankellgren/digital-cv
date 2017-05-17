@@ -1,10 +1,10 @@
 <?php
-class Colors_Block extends WP_Widget {
+class Footer_Block extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			false,
-			"Colors",
-			["description" => "Add colors to the blocks"]
+			"Footer",
+			["description" => "Add Footer information"]
 		);
 	}
 
@@ -18,7 +18,7 @@ class Colors_Block extends WP_Widget {
 		
         wp_enqueue_script(
 			"item_widget",
-			"/wp-content/themes/Sebastian/widgets/colors/js/main.js",
+			"/wp-content/themes/Sebastian/widgets/footer/js/main.js",
 			array("jquery")
        );
 	}
@@ -26,17 +26,10 @@ class Colors_Block extends WP_Widget {
 	function update($new, $old) {
 		$data = [];
 		$fields = [
-			"top_color",
-			"interests_color",
-			"education_color",
-			"knowledge_color",
-			"employment_color",
-			"footer_color",
-			"interests_background_color",
-			"education_background_color",
-			"knowledge_background_color",
-			"employment_background_color",
-			"footer_background_color"
+			"phone_number",
+			"email_address",
+			"website_url",
+			"street_address"
 		];
 		foreach ($fields as $i) {
 			$data[$i] = $new[$i];
@@ -59,7 +52,7 @@ if (!function_exists("array_get")) {
 add_action(
 	"widgets_init",
 	function() {
-		register_widget("Colors_Block");
+		register_widget("Footer_Block");
 	}
 );
 ?>

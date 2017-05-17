@@ -91,24 +91,6 @@
 
 <div class="item-widget-form">
 	<p class="attr">
-		<label style="margin-bottom: 10px; display: block;">Contact-color:</label>
-		<input type="text" class="color-picker"
-			name="<?= $this->get_field_name("contact_color"); ?>"
-			value="<?= array_get($data, "contact_color"); ?>">
-	</p>
-</div>
-
-<div class="item-widget-form">
-	<p class="attr">
-		<label style="margin-bottom: 10px; display: block;">Contact-background color:</label>
-		<input type="text" class="color-picker"
-			name="<?= $this->get_field_name("contact_background_color"); ?>"
-			value="<?= array_get($data, "contact_background_color"); ?>">
-	</p>
-</div>
-
-<div class="item-widget-form">
-	<p class="attr">
 		<label style="margin-bottom: 10px; display: block;">Footer-color:</label>
 		<input type="text" class="color-picker"
 			name="<?= $this->get_field_name("footer_color"); ?>"

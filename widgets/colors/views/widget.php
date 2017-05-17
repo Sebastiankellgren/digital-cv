@@ -8,8 +8,6 @@
     $knowledge_background_color = array_get($data, "knowledge_background_color");
     $employment_color = array_get($data, "employment_color");
     $employment_background_color = array_get($data, "employment_background_color");
-    $contact_color = array_get($data, "contact_color");
-    $contact_background_color = array_get($data, "contact_background_color");
     $footer_color = array_get($data, "footer_color");
     $footer_background_color = array_get($data, "footer_background_color");
 ?>
@@ -19,31 +17,8 @@
         color: <?= $footer_color ?>;
         background-color: <?= $footer_background_color ?>;
     }
-    #contact {
-        color: <?= $contact_color ?>;
-        background-color: <?= $contact_background_color ?>;
-    }
-    #contact input[type="text"], #contact input[type="text"]:focus {
-        color: <?= $contact_color ?>;
-        border-bottom: 1px solid <?= $contact_color ?>; 
-    }
-    #contact textarea {
-        border-bottom: 1px solid <?= $contact_color ?>;
-    }
-    #contact input[type="submit"]:hover {
-        color: <?= $contact_color ?>;
-    }
-    #contact ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        color: <?= $contact_color ?>;
-    }
-    #contact ::-moz-placeholder { /* Firefox 19+ */
-        color: <?= $contact_color ?>;
-    }
-    #contact :-ms-input-placeholder { /* IE 10+ */
-        color: <?= $contact_color ?>;
-    }
-    #contact :-moz-placeholder { /* Firefox 18- */
-        color: <?= $contact_color ?>;
+    footer table a {
+        color: <?= $footer_color ?>;
     }
     #education {
         color: <?= $education_color ?>;

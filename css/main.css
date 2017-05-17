@@ -87,9 +87,9 @@
 
 /* End of burger strucutre */
 
-body, html {
+html, body {
+    max-width: 100%;
     overflow-x: hidden;
-    width: 100%;
 }
 
 body {
@@ -100,9 +100,8 @@ body {
 }
 
 footer {
-    width: 90%;
-    margin: 0 auto;
     text-align: center;
+    padding: 45px 0 20px;
 }
 
 footer a {
@@ -112,17 +111,45 @@ footer a {
 }
 
 footer h2 {
+    margin: 0;
+}
+
+footer h3 {
     font-family: 'Courgette', cursive;
     text-transform: none;
     font-size: 35px;
 }
 
 footer p {
+    text-transform: uppercase;
     font-size: 17px;
+    margin-bottom: 0;
 }
 
-footer ul {
-    padding: 20px 0;
+footer table {
+    margin: 30px auto 45px;
+    text-align: left;
+}
+
+footer table a {
+    font-size: 15px;
+    margin: 0;
+    display: block;
+}
+
+footer table a:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer td, th {
+    padding: 20px;
+    font-size: 15px;
+    border-top: 1px solid;
+}
+
+footer tr:first-child td {
+    border-top: none;
 }
 
 ul {
@@ -136,50 +163,6 @@ ul {
 ul li {
     display: inline-block;
     padding: 0 20px;
-}
-
-#contact form {
-    max-width: 650px;
-    width: 90%;
-    margin: 0 auto;
-    padding: 0 0 50px;
-}
-
-#contact input[type="text"], #contact input[type="text"]:focus {
-    background-color: transparent;
-    border: none;
-    font-size: 19px;
-    outline: none;
-    float: left;
-    width: 48%;
-    margin-bottom: 15px;
-}
-
-#contact input[type="text"]:nth-of-type(1) {
-    margin-right: 25px;
-}
-
-#contact input[type="text"]:nth-of-type(3) {
-    width: 100%;
-}
-
-#contact input[type="submit"] {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    font-size: 19px;
-    display: inline-block;
-    width: 30%;
-}
-
-#contact textarea {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    width: 100%;
-    font-size: 19px;
-    height: 115px;
-    resize: none;
 }
 
 #employment {
@@ -216,7 +199,7 @@ ul li {
     color: white;
     font-size: 40px;
     position: absolute;
-    top: 90vh;
+    bottom: 10vh;
     right: 0;
     left: 0;
     text-align: center;

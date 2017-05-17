@@ -29,6 +29,7 @@
   include "widgets/education/widget.php";
   include "widgets/knowledge/widget.php";
   include "widgets/employment/widget.php";
+  include "widgets/footer/widget.php";
 
   //Disable all default widgets
   add_action("widgets_init", function() {
@@ -107,6 +108,17 @@
   register_sidebar(array(
   'id' => 'employment_block',
   'name' => 'Employments',
+  'before_widget' => '<ul>',
+  'after_widget' => '</ul>',
+  'before_title' => '<li>',
+  'after_title' => '</li>',
+  ));
+
+  //Footer widget
+  if ( function_exists('register_sidebar') )
+  register_sidebar(array(
+  'id' => 'footer_block',
+  'name' => 'Footer',
   'before_widget' => '<ul>',
   'after_widget' => '</ul>',
   'before_title' => '<li>',
